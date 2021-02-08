@@ -1,0 +1,288 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+ul, li, p, h1, h2, h3, h4, h5 {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("../images/tokyo.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  background-attachment: fixed;
+}
+
+.menu_wrapper {
+  background: none;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 900;
+  transition: all 300ms ease-in-out;
+}
+.menu_wrapper .desktop_menu {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+@media (max-width: 768px) {
+  .menu_wrapper .desktop_menu {
+    display: none;
+  }
+}
+.menu_wrapper .desktop_menu img {
+  width: 15%;
+}
+.menu_wrapper .desktop_menu .row {
+  align-items: center;
+}
+.menu_wrapper .desktop_menu .row ul {
+  list-style-type: none;
+}
+.menu_wrapper .desktop_menu .row ul a {
+  color: #222222;
+  text-decoration: none;
+  font-weight: 700;
+}
+.menu_wrapper .desktop_menu .row ul a:hover {
+  text-decoration: none;
+  color: #ffa704;
+}
+.menu_wrapper .mobile_menu {
+  display: none;
+}
+@media (max-width: 768px) {
+  .menu_wrapper .mobile_menu {
+    display: block;
+  }
+}
+.menu_wrapper .mobile_menu .logo {
+  width: 50%;
+}
+.menu_wrapper .mobile_menu .logo .icon {
+  height: 45px;
+  padding: 5px;
+}
+.menu_wrapper .mobile_menu .humberger_menu {
+  position: relative;
+  width: 50%;
+}
+.menu_wrapper .mobile_menu .humberger_menu img {
+  height: 20px;
+  right: 18px;
+  top: 10px;
+  cursor: pointer;
+  position: absolute;
+  transition: all 250ms ease-in-out;
+  z-index: 1000;
+}
+.menu_wrapper .mobile_menu_list {
+  position: absolute;
+  top: 0;
+  right: -100%;
+  height: 100vh;
+  background: white;
+  border-left: 1px solid #898989;
+  transition: all 200ms ease-in-out;
+}
+@media (max-width: 768px) {
+  .menu_wrapper .mobile_menu_list {
+    width: 50%;
+  }
+}
+@media (max-width: 600px) {
+  .menu_wrapper .mobile_menu_list {
+    width: 90%;
+  }
+}
+.menu_wrapper .mobile_menu_list ul {
+  list-style: none;
+  padding-left: 40px;
+  margin-top: 40px;
+}
+@media (max-width: 600px) {
+  .menu_wrapper .mobile_menu_list ul {
+    padding-left: 35px;
+  }
+}
+.menu_wrapper .mobile_menu_list ul li {
+  margin: 10px 0;
+}
+.menu_wrapper .mobile_menu_list ul li a {
+  font-size: 40px;
+  text-decoration: none;
+  color: black;
+}
+@media (max-width: 600px) {
+  .menu_wrapper .mobile_menu_list ul li a {
+    font-size: 30px;
+  }
+}
+.menu_wrapper .mobile_menu_list ul li a:hover {
+  color: #ffa704;
+}
+
+.banner_wrapper .row {
+  height: 100vh;
+  align-content: center;
+  justify-content: center;
+}
+.banner_wrapper .row h1 {
+  font-size: 50px;
+  font-weight: 700;
+}
+.banner_wrapper .row h1, .banner_wrapper .row p {
+  color: whitesmoke;
+  width: 100%;
+}
+.banner_wrapper .row button {
+  width: 100%;
+  background-color: #ffa704;
+  color: white;
+}
+.banner_wrapper .row button:hover {
+  background-color: whitesmoke;
+  color: #1a1a1a;
+}
+.banner_wrapper video {
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  position: absolute;
+  object-fit: cover;
+}
+@media (max-width: 600px) {
+  .banner_wrapper video {
+    display: none;
+  }
+}
+
+.popular_destinations {
+  background: white;
+}
+.popular_destinations h1 {
+  font-weight: 700;
+}
+.popular_destinations p {
+  color: #666666;
+}
+.popular_destinations .image {
+  position: relative;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 5px;
+  transition: all 300ms ease-in-out;
+}
+@media (max-width: 768px) {
+  .popular_destinations .image {
+    margin-bottom: 30px;
+  }
+}
+.popular_destinations .image img {
+  height: 100%;
+}
+.popular_destinations .image h1 {
+  position: absolute;
+  left: 15px;
+  bottom: 5px;
+  color: whitesmoke;
+}
+.popular_destinations .image:hover {
+  transform: translateY(-10px);
+  transition: all 300ms ease-in-out;
+  box-shadow: 0px 13px 20px 0px #9c9c9c;
+}
+
+.empty_back {
+  width: 100%;
+  height: 200px;
+  background: none;
+}
+
+.value_trips {
+  background: white;
+}
+.value_trips h1 {
+  font-weight: 700;
+}
+.value_trips p {
+  color: #666666;
+}
+@media (max-width: 768px) {
+  .value_trips .wrapper {
+    margin-bottom: 30px;
+  }
+}
+.value_trips .wrapper .image {
+  position: relative;
+  height: 300px;
+  overflow: hidden;
+  object-position: center;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  transition: all 300ms ease-in-out;
+}
+.value_trips .wrapper .image img {
+  height: 100%;
+}
+.value_trips .wrapper .image p {
+  position: absolute;
+  left: 0;
+  background: #ffa704;
+  padding: 5px;
+  color: white;
+  bottom: 20px;
+}
+.value_trips .wrapper .image_title {
+  border: 1px solid #cacaca;
+  border-top: none;
+  padding: 20px 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.value_trips .wrapper .image_title .rating {
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+.value_trips .wrapper .image_title .rating p:nth-child(2) {
+  padding-left: 20px;
+  background-image: url("../images/icons/clock.svg");
+  background-position: left;
+  background-size: 10px;
+  background-repeat: no-repeat;
+}
+.value_trips .wrapper:hover {
+  transform: translateY(-10px);
+  transition: all 300ms ease-in-out;
+}
+.value_trips .wrapper:hover .image img, .value_trips .wrapper:hover .image p {
+  transform: scale(1.1);
+  transition: all 300ms ease-in-out;
+}
+.value_trips .wrapper:hover .image_title {
+  box-shadow: 0px 13px 20px 0px #9c9c9c;
+}
+
+footer {
+  background: black;
+}
+footer * {
+  color: white;
+}
+footer h3 {
+  font-weight: 500;
+}
+footer p {
+  margin-top: 5px;
+}
+footer p svg {
+  margin-right: 10px;
+}
+
+/*# sourceMappingURL=style.css.map */
